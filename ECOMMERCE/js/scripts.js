@@ -1,9 +1,15 @@
-const producto = "Remeras Rock";
-
-function agregarAlCarrito(){
+function agregarAlCarrito(producto, stock){
+    
+    const hayStock = tenemosStock(stock);
     console.log("Agregaste el producto: " + producto);
 }
 
-agregarAlCarrito()
-agregarAlCarrito()
-agregarAlCarrito()
+function tenemosStock(stock){
+    if(stock > 0){
+        return "Tenemos stock";
+    }else{
+        return "No tenemos stock";
+    }
+}
+
+agregarAlCarrito("Remeras Ramones", 10)
