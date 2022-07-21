@@ -1,23 +1,16 @@
-const posts = [{
-    id: 1,
-    title: "Post 1",
-    content: "Content 1",
-}]
+const edad = prompt("Selecciona tu edad por favor");
 
-posts.filter(posts => posts.tags.includes("Remeras Ramones"))
-
-function agregarAlCarrito(producto, stock){
-    
-    const hayStock = tenemosStock(stock);
-    console.log("Agregaste el producto: " + producto);
-}
-
-function tenemosStock(stock){
-    if(stock > 0){
-        return "Tenemos stock";
-    }else{
-        return "No tenemos stock";
+    if(Number(edad) == edad){
+        if(edad > 18){
+            alert("Sos mayor de edad");
+            console.log("Ingreso al Boliche");
+        }
+        else{
+            document.write("Todavia no sos mayor de edad");
+            console.log("No ingreso al Boliche");
+        }
     }
-}
-
-agregarAlCarrito("Remeras Ramones", 10)
+    else{
+        alert("Digita un valor numerico valido");
+        console.log("No inserta valor numerico valido");
+    }
