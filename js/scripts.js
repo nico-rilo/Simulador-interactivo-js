@@ -1,16 +1,12 @@
-const edad = prompt("Selecciona tu edad por favor");
+let numeroUno;
+let numeroDos;
+numeroUno = prompt("Indica tu nombre: ");
+numeroDos = prompt("Indica tu apellido: ");
 
-    if(Number(edad) == edad){
-        if(edad > 18){
-            alert("Sos mayor de edad");
-            console.log("Ingreso al Boliche");
-        }
-        else{
-            document.write("Todavia no sos mayor de edad");
-            console.log("No ingreso al Boliche");
-        }
-    }
-    else{
-        alert("Digita un valor numerico valido");
-        console.log("No inserta valor numerico valido");
-    }
+let resultado;
+resultado = numeroUno + numeroDos;
+document.write("Tu nombre y apellido en consecuencia conforman tu nombre usuario, bienvenido al mejor sitio de conversion: " + resultado);
+
+console.log(resultado);
+
+
